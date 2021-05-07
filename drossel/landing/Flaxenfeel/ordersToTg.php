@@ -5,7 +5,7 @@
 
 $noNote = false;
 
-$type = $_GET['type'] ? $_POST['type'] : $noNote;
+$type = $_GET['type'] ? $_GET['type'] : $noNote;
 $typeComponent = $_GET['type-component-1'] ? $_GET['type-component-1'] : $noNote;
 $typeComponent = $_GET['type-component-2'] ? $_GET['type-component-2'] : $noNote;
 $typeComponent = $_GET['type-component-3'] ? $_GET['type-component-3'] : $noNote;
