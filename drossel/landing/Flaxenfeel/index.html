@@ -16,43 +16,6 @@
 
 <body>
 
-  <style type="text/css">
-    #hellopreloader_preload {
-      display: block;
-      position: fixed;
-      z-index: 99999;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #56C3B2 url(/img/icons/preloads.svg) center center no-repeat;
-      background-size: 122px;
-    }
-  </style>
-
-  <div id="hellopreloader">
-    <div id="hellopreloader_preload"></div>
-  </div>
-
-  <script type="text/javascript">
-    var hellopreloader = document.getElementById("hellopreloader_preload");
-    function fadeOutnojquery(el) {
-      el.style.opacity = 1;
-      var interhellopreloader = setInterval(function () {
-        el.style.opacity = el.style.opacity - 0.05;
-        if (el.style.opacity <= 0.05) {
-          clearInterval(interhellopreloader);
-          hellopreloader.style.display = "none";
-        }
-      }, 16);
-    }
-   (function preload () {
-      setTimeout(function () {
-        fadeOutnojquery(hellopreloader);
-      }, 2000);
-    })();
-  </script>
-
   <header class="header">
     <h1 class="header__main-caption visually-hidden">Інтернет-магазин постільної білизни Флаксенфіл</h1>
     <div class="header__menu">
