@@ -16,6 +16,7 @@
 
 <body>
 
+  
   <style type="text/css">
     #hellopreloader_preload {
       display: block;
@@ -46,11 +47,11 @@
         }
       }, 16);
     }
-    window.onload = function () {
+    (function preload () {
       setTimeout(function () {
         fadeOutnojquery(hellopreloader);
-      }, 1000);
-    };
+      }, 2000);
+    })();
   </script>
 
   <header class="header">
