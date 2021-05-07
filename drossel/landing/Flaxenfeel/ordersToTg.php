@@ -5,10 +5,10 @@
 
 $noNote = false;
 
-$type = $_POST['type'] ? $_POST['type'] : $noNote;
-$typeComponent = $_POST['type-component-1'] ? $_POST['type-component-1'] : $noNote;
-$typeComponent = $_POST['type-component-2'] ? $_POST['type-component-2'] : $noNote;
-$typeComponent = $_POST['type-component-3'] ? $_POST['type-component-3'] : $noNote;
+$type = $_GET['type'] ? $_POST['type'] : $noNote;
+$typeComponent = $_GET['type-component-1'] ? $_GET['type-component-1'] : $noNote;
+$typeComponent = $_GET['type-component-2'] ? $_GET['type-component-2'] : $noNote;
+$typeComponent = $_GET['type-component-3'] ? $_GET['type-component-3'] : $noNote;
 
 $token = "1806050129:AAHBJ8Np5OupbAE5O0F8SgsLvuS7yQ6YPn4";
 $chat_id = "411077009";
